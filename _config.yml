@@ -1,57 +1,49 @@
-title: Jun's Dev Log
-author: yujunkong
-email: kongyj70@gmail.com
-description: 늦게 시작하는 개발 블로그
-show_excerpts: true # set to true to show excerpts on the homepage
+title: Knowing is power
+description: I'm late but it's start
+author: Jun's Dev Log
+github: https://github.com/yujunkong
+about: I'm Programmer for Java & C sharp. I've made on numerous projects
+disqus_shortname: yjkong
+google_analytics: UA-XXXXXXXX-Y
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: Yujun Kong
-  tagline: Developer.
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
-  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
-  condensed_mobile:
-    #- home
-    - page
-    - post
-  # generate social links in footer
-  social_links:
-    #twitter: yujunkong
-    github:  yujunkong
-    #linkedIn: in/samarsault
-    #rss: rss
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
-    #youtube: jekyll
-    #facebook: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
+enableTags: true
+tagarray: []
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+social:
+    - icon: fa-facebook
+      link: "https://www.facebook.com/yujun.kong.3"
+    - icon: fa-github
+      link: "https://github.com/yujunkong"
 
-# Build settings
-theme: plainwhite
+share:
+  twitter_username: github.io
+  fb_appid: 1749788565247320
 
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+urls:
+    - text: About Me
+      url: /about/
+    - text: Useful Links
+      url: /Projects/
+
+
+url: "https://yujunkong.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
